@@ -1,4 +1,4 @@
-import { useSvgStore } from "../../store/useSvgStore";
+import { useSvgStore } from "../store/useSvgStore";
 import GalleryCard from "../components/GalleryCard";
 const Gallery = () => {
 	const gallery = useSvgStore((state) => state.gallery);

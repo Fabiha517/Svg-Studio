@@ -2,7 +2,7 @@ import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { Copy, Download, Trash2 } from "lucide-react";
 import { DownloadSvg } from "../utlis/DownloadSvg";
 import { CopySvg } from "../utlis/CopySvg";
-import { useSvgStore } from "../../store/useSvgStore";
+import { useSvgStore } from "../store/useSvgStore";
 
 const GalleryCard = ({ id, svg, title, createdAt }) => {
 	
