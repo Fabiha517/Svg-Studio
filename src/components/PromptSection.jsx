@@ -1,9 +1,8 @@
 import { Sparkles } from "lucide-react";
-import { useSvgStore } from "../../store/useSvgStore";
+import { useSvgStore } from "../store/useSvgStore";
 const PromptSection = ({ handleGenerate }) => {
-	 
 	const text = useSvgStore((state) => state.text);
-	const setText = useSvgStore((state) => state.setText); 
+	const setText = useSvgStore((state) => state.setText);
 	const handleChange = (e) => {
 		setText(e.target.value);
 	};
@@ -26,7 +25,9 @@ const PromptSection = ({ handleGenerate }) => {
 
 				<button
 					className="absolute bottom-5 right-5 rounded-xl bg-[#8FFFD4] px-2 md:px-5 py-2 text-[#071018] font-semibold hover:bg-[#67daae] transition flex gap-2 items-center justify-center cursor-pointer "
-					onClick={()=>{ handleGenerate()}}>
+					onClick={() => {
+						handleGenerate();
+					}}>
 					<Sparkles size={18} />
 					Generate
 				</button>
