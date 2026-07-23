@@ -1,0 +1,106 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="90 120 320 280"
+  width="100%"
+  height="100%"
+>
+  <defs>
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8FFFD4"/>
+      <stop offset="100%" stop-color="#4DD8FF"/>
+    </linearGradient>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Stars -->
+  <g stroke="url(#cyanGlow)" stroke-width="2" filter="url(#glow)" opacity="0.75">
+    <g transform="translate(70 80)">
+      <line x1="-8" y1="0" x2="8" y2="0"/>
+      <line x1="0" y1="-8" x2="0" y2="8"/>
+    </g>
+
+    <g transform="translate(430 110)">
+      <line x1="-7" y1="0" x2="7" y2="0"/>
+      <line x1="0" y1="-7" x2="0" y2="7"/>
+    </g>
+
+    <g transform="translate(120 390)">
+      <line x1="-6" y1="0" x2="6" y2="0"/>
+      <line x1="0" y1="-6" x2="0" y2="6"/>
+    </g>
+
+    <g transform="translate(390 360)">
+      <line x1="-5" y1="0" x2="5" y2="0"/>
+      <line x1="0" y1="-5" x2="0" y2="5"/>
+    </g>
+  </g>
+
+  <!-- Floating dots -->
+  <g fill="#73E7FF" opacity="0.45">
+    <circle cx="95" cy="170" r="2"/>
+    <circle cx="405" cy="190" r="2"/>
+    <circle cx="145" cy="315" r="2"/>
+    <circle cx="350" cy="295" r="2"/>
+    <circle cx="255" cy="80" r="2"/>
+  </g>
+
+  <!-- Dashed Image Placeholder -->
+  <rect
+    x="150"
+    y="120"
+    width="200"
+    height="145"
+    rx="18"
+    fill="none"
+    stroke="url(#cyanGlow)"
+    stroke-width="3"
+    stroke-dasharray="10 8"
+    opacity="0.8"
+  />
+
+  <!-- Code icon -->
+  <g
+    stroke="url(#cyanGlow)"
+    stroke-width="5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    filter="url(#glow)"
+  >
+    <polyline points="215,175 195,192 215,209"/>
+    <polyline points="285,175 305,192 285,209"/>
+    <line x1="245" y1="170" x2="255" y2="214"/>
+  </g>
+
+  <!-- Left swirl -->
+  <path
+    d="M105 305
+       C70 285 70 245 105 230
+       C135 220 155 240 155 260
+       C155 282 135 295 115 292"
+    fill="none"
+    stroke="url(#cyanGlow)"
+    stroke-width="3"
+    stroke-linecap="round"
+    opacity="0.35"
+  />
+
+  <!-- Right triangle -->
+  <polygon
+    points="355,300 405,380 305,380"
+    fill="none"
+    stroke="url(#cyanGlow)"
+    stroke-width="3"
+    filter="url(#glow)"
+    opacity="0.7"
+  />
+
+  <!-- Tiny sparkle -->
+  <circle cx="380" cy="92" r="3" fill="#8FFFD4" filter="url(#glow)"/>
+</svg>

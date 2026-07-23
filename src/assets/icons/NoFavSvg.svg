@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 500 500"
+     width="100%"
+     height="100%">
+
+  <defs>
+    <linearGradient id="cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8FFFD4"/>
+      <stop offset="100%" stop-color="#32CFFF"/>
+    </linearGradient>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Dashed Ring -->
+  <circle
+      cx="250"
+      cy="250"
+      r="155"
+      fill="none"
+      stroke="#6EDFFF"
+      stroke-width="2"
+      stroke-dasharray="6 8"
+      opacity=".35"/>
+
+  <!-- Heart -->
+  <path
+      d="
+      M250 340
+      L170 262
+      C120 214 135 145 200 145
+      C228 145 245 160 250 177
+      C255 160 272 145 300 145
+      C365 145 380 214 330 262
+      Z"
+      fill="none"
+      stroke="url(#cyan)"
+      stroke-width="6"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      filter="url(#glow)"/>
+
+  <!-- Sparkle -->
+  <g stroke="#8FFFD4" stroke-width="2.4" stroke-linecap="round" filter="url(#glow)">
+    <line x1="-8" y1="0" x2="8" y2="0"/>
+    <line x1="0" y1="-8" x2="0" y2="8"/>
+    <line x1="-5" y1="-5" x2="5" y2="5"/>
+    <line x1="-5" y1="5" x2="5" y2="-5"/>
+  </g>
+
+  <g transform="translate(105 135) scale(1)">
+    <line x1="-8" y1="0" x2="8" y2="0" stroke="#8FFFD4" stroke-width="2" stroke-linecap="round"/>
+    <line x1="0" y1="-8" x2="0" y2="8" stroke="#8FFFD4" stroke-width="2" stroke-linecap="round"/>
+    <line x1="-5" y1="-5" x2="5" y2="5" stroke="#8FFFD4" stroke-width="2" stroke-linecap="round"/>
+    <line x1="-5" y1="5" x2="5" y2="-5" stroke="#8FFFD4" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(388 165) scale(.8)">
+    <line x1="-8" y1="0" x2="8" y2="0" stroke="#8FFFD4" stroke-width="2"/>
+    <line x1="0" y1="-8" x2="0" y2="8" stroke="#8FFFD4" stroke-width="2"/>
+    <line x1="-5" y1="-5" x2="5" y2="5" stroke="#8FFFD4" stroke-width="2"/>
+    <line x1="-5" y1="5" x2="5" y2="-5" stroke="#8FFFD4" stroke-width="2"/>
+  </g>
+
+  <g transform="translate(135 365) scale(.7)">
+    <line x1="-8" y1="0" x2="8" y2="0" stroke="#8FFFD4" stroke-width="2"/>
+    <line x1="0" y1="-8" x2="0" y2="8" stroke="#8FFFD4" stroke-width="2"/>
+    <line x1="-5" y1="-5" x2="5" y2="5" stroke="#8FFFD4" stroke-width="2"/>
+    <line x1="-5" y1="5" x2="5" y2="-5" stroke="#8FFFD4" stroke-width="2"/>
+  </g>
+
+  <g transform="translate(385 345) scale(.9)">
+    <line x1="-8" y1="0" x2="8" y2="0" stroke="#8FFFD4" stroke-width="2"/>
+    <line x1="0" y1="-8" x2="0" y2="8" stroke="#8FFFD4" stroke-width="2"/>
+    <line x1="-5" y1="-5" x2="5" y2="5" stroke="#8FFFD4" stroke-width="2"/>
+    <line x1="-5" y1="5" x2="5" y2="-5" stroke="#8FFFD4" stroke-width="2"/>
+  </g>
+
+</svg>
