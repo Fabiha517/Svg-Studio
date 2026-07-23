@@ -1,0 +1,67 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1000"
+    height="512"
+    viewBox="0 0 1000 512"
+    fill="none">
+
+    
+    <g
+        transform="translate(-35,-5) scale(0.72)"
+        stroke="#8FFFD4"
+        stroke-width="16"
+        stroke-linecap="round"
+        stroke-linejoin="round">
+
+        <!-- Outer Cube -->
+        <path d="M250,22
+                 L48,138
+                 L48,368
+                 L250,484
+                 L452,368
+                 L452,138" />
+
+        <!-- Center Edge -->
+        <line x1="250" y1="484" x2="250" y2="238"/>
+
+        <!-- Top Facets -->
+        <line x1="250" y1="238" x2="108" y2="156"/>
+        <line x1="250" y1="238" x2="392" y2="156"/>
+
+        <!-- Top Opening -->
+        <line x1="250" y1="22" x2="336" y2="72"/>
+
+        <!-- Left Bracket -->
+        <polyline
+            points="132,254 78,285 132,316"
+            stroke-width="28"/>
+
+        <!-- Right Bracket -->
+        <polyline
+            points="368,254 422,285 368,316"
+            stroke-width="28"/>
+    </g>
+
+    <!-- WORDMARK -->
+    <text
+        x="360"
+        y="230"
+        font-family="Inter, Poppins, Segoe UI, sans-serif"
+        font-size="125">
+
+        <tspan
+            fill="#F5F7FA"
+            font-weight="700">
+            SVG
+        </tspan>
+
+        <tspan
+            dx="18"
+            fill="#A8B3C7"
+            font-weight="400">
+            Studio
+        </tspan>
+
+    </text>
+
+</svg>

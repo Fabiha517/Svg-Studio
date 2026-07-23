@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+body {
+	background-color: #071018;
+
+	background-image:
+		radial-gradient(circle, rgba(143, 255, 220, 0.08) 1px, transparent 1px),
+		linear-gradient(rgba(143, 255, 220, 0.01) 1px, transparent 1px),
+		linear-gradient(90deg, rgba(143, 255, 220, 0.01) 1px, transparent 1px);
+	background-position:
+		-15px -15px,
+		0 0,
+		0 0;
+	background-size: 30px 30px;
+	margin: 0;
+	padding: 0;
+}
+
+.glow {
+	color: #8fffd4;
+
+	text-shadow:
+		0 0 4px rgba(143, 255, 212, 0.9),
+		0 0 8px rgba(143, 255, 212, 0.6),
+		0 0 16px rgba(143, 255, 212, 0.35);
+}
+.LinkGlow {
+	color: #53eafd;
+
+	text-shadow:
+		0 0 4px rgba(143, 255, 212, 0.9),
+		0 0 8px rgba(143, 255, 212, 0.6),
+		0 0 16px rgba(143, 255, 212, 0.35);
+}
+
+.skeleton {
+	width: 80%;
+	height: 40px;
+	background-color: hsl(217, 19%, 35%);
+	border-radius: 8px;
+	animation: pulse 1.5s infinite;
+	margin-bottom: 1vh;
+}
+
+.feature-card {
+	background-color: #101a23;
+
+	border-radius: 1rem;
+
+	border: 1px solid rgba(143, 255, 212, 0.15);
+	padding: 0.5rem;
+	padding-bottom: 1rem;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	cursor: pointer;
+
+	transition:
+		transform 300ms ease-out,
+		border-color 300ms ease-out,
+		box-shadow 300ms ease-out;
+}
+
+.feature-card:hover {
+	transform: translateY(-0.5rem) scale(1);
+	border-color: rgba(143, 255, 212, 0.4);
+}
+
+.action-btn {
+	display: flex;
+	gap: 0.75rem;
+
+	color: white;
+	background-color: #0b1015;
+
+	padding: 0.75rem;
+
+	width: fit-content;
+
+	border-radius: 1rem; /* rounded-2xl */
+	border: 1px solid rgba(143, 255, 212, 0.15);
+
+	transition:
+		transform 300ms ease-out,
+		border-color 300ms ease-out;
+}
+
+.action-btn:hover {
+	transform: translateY(-0.5rem) scale(1.02);
+	border-color: rgba(143, 255, 212, 0.4);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+	background: #0c141d;
+	border-radius: 999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+	background: rgba(143, 255, 212, 0.18);
+	border-radius: 999px;
+	border: 2px solid #0c141d;
+	transition: 0.2s;
+	height: 30px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+	background: rgba(143, 255, 212, 0.35);
+}
+
+.custom-scrollbar::-webkit-scrollbar-corner {
+	background: #0c141d;
+}
